@@ -77,7 +77,7 @@ body {
 }
 
 .hero {
-  min-height: 680px;
+  min-height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: var(--light);
@@ -176,7 +176,7 @@ body {
 }
 
 .hero-image {
-  min-height: 680px;
+  min-height: 500px;
   overflow: hidden;
 }
 
