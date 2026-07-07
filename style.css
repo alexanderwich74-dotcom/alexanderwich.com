@@ -150,7 +150,7 @@ body {
 }
 
 .section {
-  padding: 90px 7%;
+  padding: 60px 7%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -177,7 +177,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 22px;
-  margin-top: 36px;
+  margin-top: 25px;
 }
 
 .card {
