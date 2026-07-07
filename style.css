@@ -71,7 +71,7 @@ body {
 
     min-height: 90vh;
 
-    padding: 70px 8%;
+    padding: 50px 8% 70px;
 
     background: var(--light);
 }
