@@ -100,23 +100,44 @@ body {
 }
 
 .button {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 15px 26px;
-  font-size: 16px;
-  border-radius: 2px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:230px;
+    height:60px;
+
+    padding:0 34px;
+
+    font-size:18px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:all .30s ease;
 }
 
 .button.primary {
-  background: var(--gold);
-  color: var(--white);
+    background:#b9975b;
+    color:white;
+    border:2px solid #b9975b;
+}
+
+.button.primary:hover{
+     background:#a7864d;
+}
 }
 
 .button.secondary {
-  border: 1px solid var(--navy);
-  color: var(--navy);
-  background: transparent;
+    background:white;
+    color:#071b3a;
+    border:2px solid #071b3a;
+}
+
+.button.secondary:hover{
+    background:#071b3a;
+    color:white;
+};
 }
 
 .hero-image img {
