@@ -100,44 +100,39 @@ body {
 }
 
 .button {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    min-width:230px;
-    height:60px;
-
-    padding:0 34px;
-
-    font-size:18px;
-    font-weight:600;
-
-    text-decoration:none;
-
-    transition:all .30s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 230px;
+  height: 60px;
+  padding: 0 34px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 .button.primary {
-    background:#b9975b;
-    color:white;
-    border:2px solid #b9975b;
+  background: #b9975b;
+  color: white;
+  border: 2px solid #b9975b;
 }
 
-.button.primary:hover{
-     background:#a7864d;
-}
+.button.primary:hover {
+  background: #a7864d;
+  border-color: #a7864d;
 }
 
 .button.secondary {
-    background:white;
-    color:#071b3a;
-    border:2px solid #071b3a;
+  background: white;
+  color: #071b3a;
+  border: 2px solid #071b3a;
 }
 
-.button.secondary:hover{
-    background:#071b3a;
-    color:white;
-};
+.button.secondary:hover {
+  background: #071b3a;
+  color: white;
 }
 
 .hero-image img {
