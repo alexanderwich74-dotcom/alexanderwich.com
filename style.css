@@ -206,3 +206,41 @@ body {
     font-size: 28px;
   }
 }
+
+.section-intro{
+    max-width:750px;
+    margin:0 auto 60px;
+    text-align:center;
+    font-size:22px;
+    line-height:1.8;
+}
+
+.framework-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.framework-card{
+    background:#ffffff;
+    padding:40px;
+    border-radius:8px;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.framework-card:hover{
+    transform:translateY(-6px);
+}
+
+.framework-card h3{
+    color:#0b1f3a;
+    margin-bottom:18px;
+    font-size:26px;
+}
+
+.framework-card p{
+    font-size:18px;
+    line-height:1.7;
+}
