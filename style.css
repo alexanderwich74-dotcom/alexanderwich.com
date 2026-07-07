@@ -89,10 +89,8 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 20px;
-  color: var(--muted);
-  max-width: 720px;
-  margin-bottom: 36px;
+    font-size: 22px;
+    line-height: 1.7;
 }
 
 .hero-actions {
