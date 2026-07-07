@@ -54,9 +54,9 @@ body {
 }
 
 .hero-section {
-  min-height: 720px;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+    min-height: 720px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
 }
 
 .hero-content {
