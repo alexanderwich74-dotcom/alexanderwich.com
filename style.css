@@ -301,13 +301,13 @@ body {
 }
 
 .pillar-block h3 {
-    font-size: 2rem;
     color: var(--navy);
+    font-size: 2.2rem;
     margin-bottom: 8px;
 }
 
 .pillar-block p {
-  max-width: 850px;
+  max-width: 760px;
 }
 
 .pillar-block .pillar-quote {
