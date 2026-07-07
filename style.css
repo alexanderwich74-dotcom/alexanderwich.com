@@ -62,13 +62,18 @@ body {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  align-items: center;
-  min-height: 78vh;
-  padding:100px 8%;
-  gap: 100px;
-  background: var(--light);
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+    min-height: 90vh;
+
+    padding: 70px 8%;
+
+    background: var(--light);
 }
 
 .eyebrow {
@@ -137,12 +142,11 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
-  max-height: 560px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+    width: 100%;
+    height: auto;
+    max-height: 620px;
+    object-fit: cover;
+    display: block;
 }
 
 .section {
