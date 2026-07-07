@@ -258,3 +258,49 @@ body {
 .framework-card {
   min-height: 230px;
 }
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:70px;
+    align-items:center;
+    margin-top:60px;
+}
+
+.profile-image img{
+    width:100%;
+    border-radius:8px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.profile-text h2{
+    margin-bottom:25px;
+    font-size:36px;
+}
+
+.profile-text p{
+    margin-bottom:24px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+@media(max-width:900px){
+
+.profile-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-image{
+
+order:-1;
+
+max-width:350px;
+
+margin:auto;
+
+}
+
+}
+
