@@ -296,18 +296,25 @@ body {
 }
 
 .pillar-block {
-  border-top: 1px solid var(--border);
-  padding: 34px 0;
+    border-top: 1px solid #e7e1d8;
+    padding: 40px 0;
 }
 
 .pillar-block h3 {
-  color: var(--navy);
-  font-size: 32px;
-  margin-bottom: 12px;
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 8px;
 }
 
 .pillar-block p {
   max-width: 850px;
+}
+
+.pillar-block .pillar-quote {
+    color: var(--gold);
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 18px;
 }
 
 .legacy-block strong {
