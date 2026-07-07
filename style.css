@@ -291,3 +291,25 @@ body {
     font-size: 40px;
   }
 }
+.pillar-section {
+  max-width: 1100px;
+}
+
+.pillar-block {
+  border-top: 1px solid var(--border);
+  padding: 34px 0;
+}
+
+.pillar-block h3 {
+  color: var(--navy);
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.pillar-block p {
+  max-width: 850px;
+}
+
+.legacy-block strong {
+  color: var(--navy);
+}
