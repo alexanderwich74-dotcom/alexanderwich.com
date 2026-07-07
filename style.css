@@ -307,7 +307,7 @@ body {
 }
 
 .pillar-block p {
-  max-width: 760px;
+  max-width: 900px;
 }
 
 .pillar-block .pillar-quote {
@@ -320,4 +320,10 @@ body {
 
 .legacy-block strong {
   color: var(--navy);
+}
+
+.intro-section,
+.pillar-section {
+    max-width: 1250px;
+    margin: 0 auto;
 }
