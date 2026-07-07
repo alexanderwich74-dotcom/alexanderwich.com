@@ -244,3 +244,17 @@ body {
     font-size:18px;
     line-height:1.7;
 }
+
+.light-section {
+  padding-bottom: 110px;
+}
+
+.framework-grid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.framework-card {
+  min-height: 230px;
+}
