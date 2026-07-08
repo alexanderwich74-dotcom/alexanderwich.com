@@ -1,443 +1,124 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --navy: #071b3a;
-  --gold: #b9975b;
-  --text: #1f2933;
-  --muted: #5f6b7a;
-  --light: #f7f5f0;
-  --white: #ffffff;
-  --border: #e4e0d7;
-}
-
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  color: var(--text);
-  background: var(--white);
-  line-height: 1.6;
-}
-
-.site-header {
-  width: 100%;
-  padding: 26px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-size:30px;
-  font-weight:600;
-  color: var(--navy);
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 34px;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: var(--navy);
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.nav-button {
-  background: var(--gold);
-  color: var(--white) !important;
-  padding: 12px 20px;
-  border-radius: 2px;
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-
-    align-items: center;
-
-    gap: 80px;
-
-    min-height: 90vh;
-
-    padding: 50px 8% 70px;
-
-    background: var(--light);
-}
-
-.eyebrow {
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-
-.hero h1 {
-    font-size: clamp(28px, 2.8vw, 42px);
-    line-height: 1.18;
-    color: var(--navy);
-    margin-bottom: 24px;
-    max-width: 980px;
-}
-
-.hero-subtitle {
-    font-size: 22px;
-    line-height: 1.8;
-    max-width: 650px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 230px;
-  height: 60px;
-  padding: 0 34px;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.button.primary {
-  background: #b9975b;
-  color: white;
-  border: 2px solid #b9975b;
-}
-
-.button.primary:hover {
-  background: #a7864d;
-  border-color: #a7864d;
-}
-
-.button.secondary {
-  background: white;
-  color: #071b3a;
-  border: 2px solid #071b3a;
-}
-
-.button.secondary:hover {
-  background: #071b3a;
-  color: white;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    max-height: 620px;
-    object-fit: cover;
-    display: block;
-}
-
-.section {
-  padding: 60px 7%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.section h2 {
-  color: var(--navy);
-  font-size: clamp(32px, 3vw, 48px);
-  line-height: 1.15;
-  margin-bottom: 24px;
-}
-
-.section p {
-    font-size: 19px;
-    color: var(--muted);
-    max-width: 900px;
-    margin-bottom: 20px;
-}
-
-.intro-section {
-  text-align: left;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 22px;
-  margin-top: 25px;
-}
-
-.card {
-  border: 1px solid var(--border);
-  padding: 30px;
-  background: var(--white);
-  min-height: 210px;
-}
-
-.card h3 {
-  color: var(--navy);
-  font-size: 22px;
-  margin-bottom: 14px;
-}
-
-.card p {
-  font-size: 16px;
-  margin: 0;
-}
-
-.highlight-section,
-.contact-preview {
-  background: var(--navy);
-  color: var(--white);
-  max-width: none;
-}
-
-.highlight-section h2,
-.contact-preview h2 {
-  color: var(--white);
-}
-
-.highlight-section p,
-.contact-preview p {
-  color: rgba(255, 255, 255, 0.82);
-}
-
-.text-link {
-  display: inline-block;
-  margin-top: 18px;
-  color: var(--gold);
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.portfolio-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 14px 40px;
-  margin: 34px 0;
-  max-width: 900px;
-  list-style: none;
-}
-
-.portfolio-list li {
-  font-size: 18px;
-  color: var(--text);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 10px;
-}
-
-.site-footer {
-  padding: 30px 7%;
-  background: #041124;
-  color: rgba(255, 255, 255, 0.75);
-  text-align: center;
-  font-size: 14px;
-}
-
-@media (max-width: 1100px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-image img {
-    max-height: 520px;
-  }
-}
-
-@media (max-width: 760px) {
-  .site-header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-  }
-
-  .hero {
-    padding: 60px 6%;
-  }
-
-  .section {
-    padding: 70px 6%;
-  }
-
-  .cards,
-  .portfolio-list {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-}
-.pillar-section {
-  max-width: 1100px;
-}
-
-.pillar-block {
-    border-top: 1px solid #e7e1d8;
-    padding: 40px 0;
-}
-
-.pillar-block h3 {
-    color: var(--navy);
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-}
-
-.pillar-block p {
-  max-width: 900px;
-}
-
-.pillar-block .pillar-quote {
-    color: var(--gold);
-    font-style: italic;
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin: 8px 0 18px;
-}
-
-.legacy-block strong {
-  color: var(--navy);
-}
-
-.intro-section,
-.pillar-section {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-/* ===========================
-   PORTFOLIO PAGE
-=========================== */
-
-.page-hero{
-    max-width:1250px;
-    margin:60px auto 30px;
-    padding:0 40px;
-}
-
-.page-hero h1{
-    font-size:clamp(42px,4vw,58px);
-    color:var(--navy);
-    margin-bottom:18px;
-}
-
-.page-hero p{
-    font-size:22px;
-    color:var(--muted);
-    max-width:850px;
-    line-height:1.7;
-}
-
-.content-section{
-    max-width:1250px;
-    margin:0 auto;
-    padding:60px 40px;
-}
-
-.content-section h2{
-    font-size:2.5rem;
-    color:var(--navy);
-    margin-bottom:40px;
-}
-
-.light-section{
-    background:#f8f8f8;
-    border-top:1px solid #ececec;
-    border-bottom:1px solid #ececec;
-}
-
-.portfolio-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
-    gap:35px;
-}
-
-.portfolio-card{
-    background:#fff;
-    border-left:5px solid var(--gold);
-    padding:35px;
-    border-radius:8px;
-    box-shadow:0 10px 28px rgba(0,0,0,.06);
-}
-
-.portfolio-card h3{
-    color:var(--navy);
-    font-size:1.7rem;
-    margin-bottom:10px;
-}
-
-.portfolio-card p{
-    margin-bottom:16px;
-    color:var(--text);
-}
-
-.achievement-list{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
-
-.achievement-item{
-    background:#fff;
-    padding:30px;
-    border-top:4px solid var(--gold);
-    border-radius:8px;
-    box-shadow:0 8px 24px rgba(0,0,0,.05);
-}
-
-.achievement-item h3{
-    color:var(--navy);
-    margin-bottom:15px;
-    font-size:1.5rem;
-}
-
-.achievement-item p{
-    margin:0;
-}
-
-.portfolio-grid{
-    align-items: stretch;
-}
-
-.portfolio-card{
-    min-height: 360px;
-}
-
-.portfolio-card p{
-    font-size: 17px;
-    line-height: 1.65;
-}
-
-.content-section{
-    padding-top: 35px;
-}
-
-.page-hero{
-    margin-bottom: 20px;
-}
-.portfolio-page{
-    padding-bottom:80px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexander Wich | Executive Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="logo">
+    <div class="logo-name">ALEXANDER WICH</div>
+    <div class="logo-subtitle">EXECUTIVE LEADERSHIP</div>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="executive-profile.html">EXECUTIVE PROFILE</a>
+    <a href="framework.html">FRAMEWORK</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<main class="executive-profile-page">
+
+  <section class="profile-hero">
+    <div class="profile-hero-image">
+      <img src="assets/homepage.jpg" alt="Alexander Wich" />
+    </div>
+
+    <div class="profile-hero-content">
+      <p class="eyebrow">Executive Profile</p>
+      <h1>Leadership shaped by people, technology, assets and responsibility.</h1>
+      <p>
+        I am an international executive with more than two decades of experience leading
+        technical operations, strategic asset management and organisational transformation
+        across complex hospitality environments.
+      </p>
+    </div>
+  </section>
+
+  <section class="executive-content">
+
+    <div class="profile-block">
+      <h2>Who I Am</h2>
+      <p>
+        My work connects business strategy, people, technology and assets to create reliable,
+        high-performing organisations. I have been shaped by international hospitality environments,
+        large-scale technical operations, pre-opening projects, asset management and leadership across
+        multicultural teams.
+      </p>
+      <p>
+        I believe that strong organisations are built through clarity, trust, accountability and
+        disciplined execution. Technical excellence matters, but people, communication and responsible
+        decision-making determine whether operations truly perform.
+      </p>
+    </div>
+
+    <div class="profile-block">
+      <h2>How I Lead</h2>
+      <p>
+        I lead by creating clarity, building trust and accepting responsibility. My role is to align people,
+        systems and priorities so that teams can perform with confidence and purpose.
+      </p>
+      <p>
+        I believe leadership begins with responsibility, grows through accountability and is sustained by
+        continuous learning. Every decision should strengthen the organisation, develop people and protect
+        the long-term value entrusted to us.
+      </p>
+    </div>
+
+    <div class="profile-block">
+      <h2>Executive Focus</h2>
+      <p>
+        I remain associated with Novicom A/S, supporting the exploration of strategic opportunities and
+        potential international development. Alongside this, I am seeking the right executive leadership
+        opportunity where I can leverage more than 20 years of international experience in facilities,
+        technical operations, asset management and organisational transformation.
+      </p>
+      <p>
+        My objective is not only to operate successful buildings, but to leave organisations stronger than
+        I found them — commercially, operationally and culturally.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="profile-timeline-section">
+    <h2>Professional Journey</h2>
+
+    <div class="timeline-grid">
+      <div class="timeline-card">
+        <h3>Hilton Austria Cluster Hotels</h3>
+        <p>Information Systems Manager</p>
+        <span>2004–2006</span>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Hilton Copenhagen Airport</h3>
+        <p>Engineering & Technical Operations Leadership</p>
+        <span>2006–2017</span>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Strawberry Hotels</h3>
+        <p>Cluster Director of Facilities & Technical Operations</p>
+        <span>2017–2024</span>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Novicom A/S</h3>
+        <p>Senior Advisor | Strategic Projects & Business Development</p>
+        <span>2024–Present</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
