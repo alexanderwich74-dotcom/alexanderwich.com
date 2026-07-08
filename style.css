@@ -372,3 +372,43 @@ h3 {
 .home-closing blockquote {
   margin-bottom: 30px;
 }\n
+
+/* Global polish - Version 1.0 */
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 80px;
+}
+
+.hero-image img {
+  width: min(100%, 450px);
+}
+
+.btn {
+  padding: 16px 28px;
+  border-radius: 4px;
+}
+
+.main-nav .nav-button {
+  padding: 15px 26px;
+  border-radius: 4px;
+}
+
+.card {
+  padding: 34px 32px;
+}
+
+.section {
+  padding: 82px 0;
+}
+
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero-image img {
+    width: min(100%, 420px);
+  }
+}
