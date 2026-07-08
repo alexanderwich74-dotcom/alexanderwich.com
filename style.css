@@ -442,3 +442,33 @@ h3 {
     border-left: none;
   }
 }
+
+/* Global language switch */
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+  padding-left: 18px;
+  border-left: 1px solid rgba(6, 26, 61, 0.16);
+}
+
+.language-switch a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #061a3d;
+  text-decoration: none;
+}
+
+.language-switch a.active,
+.language-switch a:hover {
+  color: #b4975a;
+}
+
+@media (max-width: 760px) {
+  .language-switch {
+    padding-left: 0;
+    border-left: none;
+  }
+}
