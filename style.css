@@ -1,140 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Wich | Executive Profile</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+/* =========================================================
+   Alexander Wich Website - Clean Style.css
+   Version 1.0 clean-up
+   ========================================================= */
 
-<body>
+/* ---------- Base / Reset ---------- */
 
-<header class="site-header">
-  <div class="logo">
-    <div class="logo-name">ALEXANDER WICH</div>
-    <div class="logo-subtitle">EXECUTIVE LEADERSHIP</div>
-  </div>
+* {
+  box-sizing: border-box;
+}
 
-  <nav class="main-nav">
-    <a href="index.html">HOME</a>
-    <a href="executive-profile.html">EXECUTIVE PROFILE</a>
-    <a href="framework.html">FRAMEWORK</a>
-    <a href="portfolio.html">PORTFOLIO</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
-</header>
+html {
+  scroll-behavior: smooth;
+}
 
-<main class="executive-profile-page">
+body {
+  margin: 0;
+  color: #061a3d;
+  background: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
-  <section class="profile-hero">
-    <div class="profile-hero-image">
-      <img src="assets/homepage.jpg" alt="Alexander Wich" />
-    </div>
+img {
+  max-width: 100%;
+  display: block;
+}
 
-    <div class="profile-hero-content">
-      <p class="eyebrow">Executive Profile</p>
-      <h1>Leadership shaped by people, technology, assets and responsibility.</h1>
-      <p>
-        I am an international executive with more than two decades of experience leading
-        technical operations, strategic asset management and organisational transformation
-        across complex hospitality environments.
-      </p>
-    </div>
-  </section>
+a {
+  color: inherit;
+}
 
-  <section class="executive-content">
+p {
+  margin: 0 0 1.1rem;
+}
 
-    <div class="profile-block">
-      <h2>Who I Am</h2>
-      <p>
-        My work connects business strategy, people, technology and assets to create reliable,
-        high-performing organisations. I have been shaped by international hospitality environments,
-        large-scale technical operations, pre-opening projects, asset management and leadership across
-        multicultural teams.
-      </p>
-      <p>
-        I believe that strong organisations are built through clarity, trust, accountability and
-        disciplined execution. Technical excellence matters, but people, communication and responsible
-        decision-making determine whether operations truly perform.
-      </p>
-    </div>
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: #061a3d;
+  line-height: 1.15;
+}
 
-    <div class="profile-block">
-      <h2>How I Lead</h2>
-      <p>
-        I lead by creating clarity, building trust and accepting responsibility. My role is to align people,
-        systems and priorities so that teams can perform with confidence and purpose.
-      </p>
-      <p>
-        I believe leadership begins with responsibility, grows through accountability and is sustained by
-        continuous learning. Every decision should strengthen the organisation, develop people and protect
-        the long-term value entrusted to us.
-      </p>
-    </div>
+h1 {
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  letter-spacing: -0.035em;
+}
 
-    <div class="profile-block">
-      <h2>Executive Focus</h2>
-      <p>
-        I remain associated with Novicom A/S, supporting the exploration of strategic opportunities and
-        potential international development. Alongside this, I am seeking the right executive leadership
-        opportunity where I can leverage more than 20 years of international experience in facilities,
-        technical operations, asset management and organisational transformation.
-      </p>
-      <p>
-        My objective is not only to operate successful buildings, but to leave organisations stronger than
-        I found them — commercially, operationally and culturally.
-      </p>
-    </div>
+h2 {
+  font-size: clamp(1.65rem, 2.7vw, 2.45rem);
+  letter-spacing: -0.02em;
+}
 
-  </section>
+h3 {
+  font-size: 1.25rem;
+}
 
-  <section class="profile-timeline-section">
-    <h2>Professional Journey</h2>
-
-    <div class="timeline-grid">
-      <div class="timeline-card">
-        <h3>Hilton Austria Cluster Hotels</h3>
-        <p>Information Systems Manager</p>
-        <span>2004–2006</span>
-      </div>
-
-      <div class="timeline-card">
-        <h3>Hilton Copenhagen Airport</h3>
-        <p>Engineering & Technical Operations Leadership</p>
-        <span>2006–2017</span>
-      </div>
-
-      <div class="timeline-card">
-        <h3>Strawberry Hotels</h3>
-        <p>Cluster Director of Facilities & Technical Operations</p>
-        <span>2017–2024</span>
-      </div>
-
-      <div class="timeline-card">
-        <h3>Novicom A/S</h3>
-        <p>Senior Advisor | Strategic Projects & Business Development</p>
-        <span>2024–Present</span>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-</body>
-</html>
-
-/* Executive Profile Page */
 .container {
   width: min(1120px, calc(100% - 48px));
   margin: 0 auto;
 }
 
-.container.narrow {
-  width: min(850px, calc(100% - 48px));
-}
-
-.page-hero {
-  padding: 72px 0 42px;
+.container-narrow {
+  width: min(820px, calc(100% - 48px));
+  margin: 0 auto;
 }
 
 .eyebrow {
@@ -146,338 +76,15 @@
   text-transform: uppercase;
 }
 
-.page-hero h1 {
-  margin: 0 0 28px;
-  color: #061a3d;
-  font-size: clamp(2.6rem, 5vw, 4.8rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
-  max-width: 980px;
-}
-
 .lead {
-  margin: 0;
   color: #27364f;
-  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  font-size: clamp(1.08rem, 1.6vw, 1.28rem);
   line-height: 1.75;
   max-width: 760px;
 }
 
-.profile-section {
-  padding: 34px 0 28px;
-}
+/* ---------- Header / Navigation ---------- */
 
-.profile-block {
-  padding: 34px 0;
-  border-top: 1px solid rgba(6, 26, 61, 0.12);
-}
-
-.profile-block h2 {
-  margin: 0 0 18px;
-  color: #061a3d;
-  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
-  line-height: 1.18;
-  letter-spacing: -0.02em;
-}
-
-.profile-block p {
-  margin: 0 0 18px;
-  color: #26344e;
-  font-size: 1.06rem;
-  line-height: 1.82;
-}
-
-.profile-block p:last-child {
-  margin-bottom: 0;
-}
-
-.belief-section {
-  padding: 72px 0;
-  background: #f7f4ee;
-}
-
-.belief-section h2 {
-  margin: 0 0 34px;
-  color: #061a3d;
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-  max-width: 820px;
-}
-
-.belief-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-}
-
-.belief-card {
-  background: #ffffff;
-  border: 1px solid rgba(6, 26, 61, 0.1);
-  padding: 28px;
-  min-height: 210px;
-}
-
-.belief-card h3 {
-  margin: 0 0 14px;
-  color: #061a3d;
-  font-size: 1.18rem;
-  line-height: 1.25;
-}
-
-.belief-card p {
-  margin: 0;
-  color: #31415a;
-  font-size: 0.98rem;
-  line-height: 1.7;
-}
-
-.closing-statement {
-  padding: 76px 0 90px;
-}
-
-.closing-statement blockquote {
-  margin: 0;
-  color: #061a3d;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: 1.12;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-}
-
-@media (max-width: 980px) {
-  .belief-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .container,
-  .container.narrow {
-    width: min(100% - 32px, 1120px);
-  }
-
-  .page-hero {
-    padding: 52px 0 26px;
-  }
-
-  .profile-block {
-    padding: 28px 0;
-  }
-
-  .belief-section {
-    padding: 54px 0;
-  }
-
-  .belief-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .belief-card {
-    min-height: auto;
-  }
-}
-
-/* Executive Profile Page - Updated with Portrait */
-.executive-profile-container {
-  width: min(1120px, calc(100% - 48px));
-  margin: 0 auto;
-}
-
-.executive-profile-container.narrow {
-  width: min(820px, calc(100% - 48px));
-}
-
-.executive-profile-hero {
-  padding: 76px 0 64px;
-}
-
-.executive-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  gap: 64px;
-  align-items: center;
-}
-
-.executive-hero-text h1 {
-  margin: 0 0 28px;
-  color: #061a3d;
-  font-size: clamp(2.7rem, 5vw, 4.8rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
-}
-
-.eyebrow {
-  margin: 0 0 22px;
-  color: #b4975a;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.lead {
-  margin: 0;
-  color: #27364f;
-  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
-  line-height: 1.75;
-  max-width: 720px;
-}
-
-.executive-hero-image {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.executive-hero-image img {
-  width: min(100%, 360px);
-  max-height: 460px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 16px;
-  box-shadow: 0 24px 60px rgba(6, 26, 61, 0.16);
-}
-
-.profile-section {
-  padding: 28px 0 34px;
-}
-
-.profile-block {
-  padding: 36px 0;
-  border-top: 1px solid rgba(6, 26, 61, 0.12);
-}
-
-.profile-block h2 {
-  margin: 0 0 18px;
-  color: #061a3d;
-  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
-  line-height: 1.18;
-  letter-spacing: -0.02em;
-}
-
-.profile-block p {
-  margin: 0 0 18px;
-  color: #26344e;
-  font-size: 1.06rem;
-  line-height: 1.82;
-}
-
-.profile-block p:last-child {
-  margin-bottom: 0;
-}
-
-.belief-section {
-  margin: 34px auto 0;
-  padding: 76px 0;
-  background: #f7f4ee;
-}
-
-.belief-section h2 {
-  margin: 0 0 34px;
-  color: #061a3d;
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-  max-width: 820px;
-}
-
-.belief-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-}
-
-.belief-card {
-  background: #ffffff;
-  border: 1px solid rgba(6, 26, 61, 0.08);
-  padding: 30px 28px;
-  min-height: 210px;
-  box-shadow: 0 14px 34px rgba(6, 26, 61, 0.06);
-}
-
-.belief-card h3 {
-  margin: 0 0 14px;
-  color: #061a3d;
-  font-size: 1.18rem;
-  line-height: 1.25;
-}
-
-.belief-card p {
-  margin: 0;
-  color: #31415a;
-  font-size: 0.98rem;
-  line-height: 1.7;
-}
-
-.closing-statement {
-  padding: 86px 0 96px;
-  text-align: center;
-}
-
-.closing-statement blockquote {
-  margin: 0;
-  color: #061a3d;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: 1.12;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-}
-
-.closing-statement p {
-  margin: 24px 0 0;
-  color: #b4975a;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-@media (max-width: 980px) {
-  .executive-hero-grid {
-    grid-template-columns: 1fr;
-    gap: 38px;
-  }
-
-  .executive-hero-image {
-    justify-content: flex-start;
-  }
-
-  .executive-hero-image img {
-    width: min(100%, 320px);
-    max-height: 420px;
-  }
-
-  .belief-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .executive-profile-container,
-  .executive-profile-container.narrow {
-    width: min(100% - 32px, 1120px);
-  }
-
-  .executive-profile-hero {
-    padding: 52px 0 34px;
-  }
-
-  .profile-block {
-    padding: 28px 0;
-  }
-
-  .belief-section {
-    padding: 54px 0;
-  }
-
-  .belief-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .belief-card {
-    min-height: auto;
-  }
-}
-
-/* Header / Navigation Fix */
 .site-header {
   width: 100%;
   background: #ffffff;
@@ -496,7 +103,7 @@
 
 .site-logo {
   color: #061a3d;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 700;
   text-decoration: none;
   line-height: 1;
@@ -533,9 +140,364 @@
   color: #ffffff;
 }
 
+/* Backwards compatibility for older header version */
+.logo-name {
+  color: #061a3d;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.logo-subtitle {
+  color: #b4975a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ---------- Buttons ---------- */
+
+.button-row,
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn,
+.button,
+.hero-button,
+.primary-button {
+  display: inline-block;
+  background: #b4975a;
+  color: #ffffff;
+  padding: 14px 24px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.btn:hover,
+.button:hover,
+.hero-button:hover,
+.primary-button:hover {
+  background: #061a3d;
+  color: #ffffff;
+}
+
+.secondary-button {
+  display: inline-block;
+  color: #061a3d;
+  padding: 13px 23px;
+  border: 1px solid rgba(6, 26, 61, 0.18);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.secondary-button:hover {
+  border-color: #b4975a;
+  color: #b4975a;
+}
+
+/* ---------- Home Page ---------- */
+
+.hero,
+.home-hero {
+  padding: 72px 0 76px;
+}
+
+.hero-grid,
+.home-hero-grid {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-content h1,
+.home-hero h1 {
+  margin-bottom: 24px;
+}
+
+.hero-content p,
+.home-hero p {
+  color: #27364f;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  max-width: 760px;
+}
+
+.hero-image img,
+.home-hero-image img {
+  width: min(100%, 420px);
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 24px 60px rgba(6, 26, 61, 0.16);
+}
+
+.intro-section,
+.content-section,
+.what-i-bring,
+.home-section {
+  padding: 70px 0;
+}
+
+.section-inner {
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.card-grid,
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.card,
+.value-card {
+  background: #ffffff;
+  border: 1px solid rgba(6, 26, 61, 0.1);
+  padding: 28px;
+  box-shadow: 0 12px 32px rgba(6, 26, 61, 0.05);
+}
+
+/* ---------- Executive Profile Page ---------- */
+
+.executive-profile-hero {
+  padding: 76px 0 64px;
+}
+
+.executive-profile-container {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.executive-profile-container.narrow {
+  width: min(820px, calc(100% - 48px));
+}
+
+.executive-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.executive-hero-text h1 {
+  margin: 0 0 28px;
+}
+
+.executive-hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.executive-hero-image img {
+  width: min(100%, 320px);
+  max-height: 430px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(6, 26, 61, 0.16);
+}
+
+.profile-section {
+  padding: 28px 0 34px;
+}
+
+.profile-block {
+  padding: 36px 0;
+  border-top: 1px solid rgba(6, 26, 61, 0.12);
+}
+
+.profile-block h2 {
+  margin-bottom: 18px;
+}
+
+.profile-block p {
+  color: #26344e;
+  font-size: 1.06rem;
+  line-height: 1.82;
+}
+
+.belief-section {
+  margin-top: 34px;
+  padding: 76px 0;
+  background: #f7f4ee;
+}
+
+.belief-section h2 {
+  margin-bottom: 34px;
+  max-width: 820px;
+}
+
+.belief-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.belief-card {
+  background: #ffffff;
+  border: 1px solid rgba(6, 26, 61, 0.08);
+  padding: 30px 28px;
+  min-height: 210px;
+  box-shadow: 0 14px 34px rgba(6, 26, 61, 0.06);
+}
+
+.belief-card h3 {
+  margin-bottom: 14px;
+}
+
+.belief-card p {
+  color: #31415a;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.closing-statement {
+  padding: 86px 0 96px;
+  text-align: center;
+}
+
+.closing-statement blockquote {
+  margin: 0;
+  color: #061a3d;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.closing-statement p {
+  margin: 24px 0 0;
+  color: #b4975a;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Framework / Portfolio Shared ---------- */
+
+.page-hero {
+  padding: 72px 0 42px;
+}
+
+.page-hero h1 {
+  margin-bottom: 28px;
+  max-width: 980px;
+}
+
+.framework-section,
+.pillar-section,
+.portfolio-section,
+.project-section {
+  padding: 64px 0;
+}
+
+.pillar-grid,
+.portfolio-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.pillar-card,
+.portfolio-card,
+.project-card {
+  background: #ffffff;
+  border: 1px solid rgba(6, 26, 61, 0.1);
+  padding: 30px;
+  box-shadow: 0 12px 32px rgba(6, 26, 61, 0.05);
+}
+
+.pillar-card h3,
+.portfolio-card h3,
+.project-card h3 {
+  margin-bottom: 12px;
+}
+
+.pillar-card p,
+.portfolio-card p,
+.project-card p {
+  color: #31415a;
+  line-height: 1.75;
+}
+
+/* ---------- Contact Page ---------- */
+
+.contact-section {
+  padding: 76px 0 96px;
+}
+
+.contact-card {
+  background: #f7f4ee;
+  padding: 44px;
+  border: 1px solid rgba(6, 26, 61, 0.08);
+}
+
+.contact-card p {
+  color: #26344e;
+  font-size: 1.06rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  padding: 28px 0;
+  border-top: 1px solid rgba(6, 26, 61, 0.12);
+  color: #31415a;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 980px) {
+  .hero-grid,
+  .home-hero-grid,
+  .executive-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .executive-hero-image,
+  .hero-image,
+  .home-hero-image {
+    justify-content: flex-start;
+  }
+
+  .belief-grid,
+  .card-grid,
+  .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pillar-grid,
+  .portfolio-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 760px) {
-  .nav-container {
+  .nav-container,
+  .site-header {
     align-items: flex-start;
+  }
+
+  .nav-container {
     flex-direction: column;
     gap: 18px;
   }
@@ -547,5 +509,46 @@
 
   .main-nav .nav-button {
     padding: 10px 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .container-narrow,
+  .executive-profile-container,
+  .executive-profile-container.narrow,
+  .hero-grid,
+  .home-hero-grid,
+  .section-inner {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .hero,
+  .home-hero,
+  .executive-profile-hero,
+  .page-hero {
+    padding: 52px 0 34px;
+  }
+
+  .profile-block {
+    padding: 28px 0;
+  }
+
+  .belief-section {
+    padding: 54px 0;
+  }
+
+  .belief-grid,
+  .card-grid,
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .belief-card {
+    min-height: auto;
+  }
+
+  .contact-card {
+    padding: 30px 24px;
   }
 }
