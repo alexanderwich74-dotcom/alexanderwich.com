@@ -362,3 +362,13 @@ h3 {
     padding: 30px 24px;
   }
 }
+
+/* Home page polish */
+.home-closing .button-row.centered,
+.button-row.centered {
+  justify-content: center;
+}
+
+.home-closing blockquote {
+  margin-bottom: 30px;
+}\n
