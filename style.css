@@ -327,3 +327,93 @@ body {
     max-width: 1250px;
     margin: 0 auto;
 }
+
+/* ===========================
+   PORTFOLIO PAGE
+=========================== */
+
+.page-hero{
+    max-width:1250px;
+    margin:70px auto 60px;
+    padding:0 40px;
+}
+
+.page-hero h1{
+    font-size:clamp(42px,4vw,58px);
+    color:var(--navy);
+    margin-bottom:18px;
+}
+
+.page-hero p{
+    font-size:22px;
+    color:var(--muted);
+    max-width:850px;
+    line-height:1.7;
+}
+
+.content-section{
+    max-width:1250px;
+    margin:0 auto;
+    padding:60px 40px;
+}
+
+.content-section h2{
+    font-size:2.5rem;
+    color:var(--navy);
+    margin-bottom:40px;
+}
+
+.light-section{
+    background:#f8f8f8;
+    border-top:1px solid #ececec;
+    border-bottom:1px solid #ececec;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+    gap:35px;
+}
+
+.portfolio-card{
+    background:#fff;
+    border-left:5px solid var(--gold);
+    padding:35px;
+    border-radius:8px;
+    box-shadow:0 10px 28px rgba(0,0,0,.06);
+}
+
+.portfolio-card h3{
+    color:var(--navy);
+    font-size:1.7rem;
+    margin-bottom:10px;
+}
+
+.portfolio-card p{
+    margin-bottom:16px;
+    color:var(--text);
+}
+
+.achievement-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.achievement-item{
+    background:#fff;
+    padding:30px;
+    border-top:4px solid var(--gold);
+    border-radius:8px;
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+}
+
+.achievement-item h3{
+    color:var(--navy);
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.achievement-item p{
+    margin:0;
+}
