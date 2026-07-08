@@ -418,6 +418,26 @@ body {
     margin:0;
 }
 
+.portfolio-grid{
+    align-items: stretch;
+}
+
+.portfolio-card{
+    min-height: 360px;
+}
+
+.portfolio-card p{
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.content-section{
+    padding-top: 35px;
+}
+
+.page-hero{
+    margin-bottom: 20px;
+}
 .portfolio-page{
     padding-bottom:80px;
 }
