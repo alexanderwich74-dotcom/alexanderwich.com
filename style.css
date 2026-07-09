@@ -557,3 +557,45 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+
+/* Additional Achievement List */
+
+.achievement-details{
+    max-width:1100px;
+    margin:70px auto 0;
+    padding-top:50px;
+    border-top:1px solid #d8d8d8;
+}
+
+.achievement-details h2{
+    text-align:center;
+    margin-bottom:12px;
+}
+
+.achievement-details .section-intro{
+    text-align:center;
+    color:#666;
+    max-width:760px;
+    margin:0 auto 45px;
+}
+
+.achievement-category{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.achievement-category h3{
+    color:#0d2b55;
+    margin-bottom:12px;
+}
+
+.achievement-category ul{
+    margin:0;
+    padding-left:24px;
+}
+
+.achievement-category li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
