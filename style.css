@@ -610,7 +610,7 @@ h3 {
 .achievement-category h3::after {
     content: "";
     display: block;
-    width: 90px;
+    width: 120px;
     height: 2px;
     background: #c9a227;
     margin-top: 8px;
