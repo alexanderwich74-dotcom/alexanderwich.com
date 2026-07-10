@@ -170,8 +170,8 @@ h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
-  gap: 72px;
+  grid-template-columns: 1.55fr 0.75fr;
+  gap: 60px;
   align-items: center;
 }
 
