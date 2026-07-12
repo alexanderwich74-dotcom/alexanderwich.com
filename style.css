@@ -615,3 +615,8 @@ h3 {
     background: #c9a227;
     margin-top: 8px;
 }
+
+.hero-focus {
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
