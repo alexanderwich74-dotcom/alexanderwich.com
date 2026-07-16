@@ -620,3 +620,21 @@ h3 {
   margin-top: 1.5rem;
   font-weight: 500;
 }
+
+.site-footer {
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #0d1b4d;
+    text-decoration: none;
+    margin: 0 0.35rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
