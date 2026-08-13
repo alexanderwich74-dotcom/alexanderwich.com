@@ -1,229 +1,548 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berufserfahrung | Alexander Wich</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="nav-container">
-      <a href="index-de.html" class="site-logo">Alexander Wich</a>
-      <nav class="main-nav">
-        <a href="index-de.html">Startseite</a>
-        <a href="executive-profile-de.html">Executive Profile</a>
-        <a href="portfolio-de.html" class="nav-button active">Berufserfahrung</a>
-        <a href="contact-de.html" class="nav-button">Kontakt</a>
-        <span class="language-switch">
-          <a href="portfolio.html">EN</a>
-          <a href="portfolio-de.html" class="active">DE</a>
-        </span>
-      </nav>
-    </div>
-  </header>
+/* =========================================================
+   Alexander Wich Website - Version 1.0 Rebuild
+   ========================================================= */
 
-  <main>
-    <section class="page-hero">
-      <div class="container narrow">
-        <p class="eyebrow">Berufserfahrung</p>
-        <h1>Internationale Hospitality, technischer Betrieb und strategische Asset-Führung.</h1>
-        <p class="lead">
-          Eine Auswahl von Umgebungen, Projekten und Verantwortungsbereichen, die meinen Führungsansatz auf Executive-Ebene geprägt haben.
-        </p>
-      </div>
-    </section>
+* { box-sizing: border-box; }
 
-    <section class="section">
-      <div class="container">
-        <div class="card-grid two">
+html { scroll-behavior: smooth; }
 
-          <article class="card large">
-            <h3>Novicom A/S</h3>
-            <p><strong>Strategische Unternehmensentwicklung &amp; Beratung</strong></p>
-            <p>Unterstützung strategischer Geschäftsentwicklung, technischer Beratung und internationaler Wachstumsinitiativen mit Executive-Erfahrung aus komplexen Hospitality- und Facility-Management-Umgebungen.</p>
-          </article>
+body {
+  margin: 0;
+  color: #061a3d;
+  background: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
 
-          <article class="card large">
-            <h3>Strawberry Hotels Copenhagen Airport Cluster</h3>
-            <p><strong>Cluster Director of Facilities &amp; Technical Operations</strong></p>
-            <p><strong>2 Hotels | 987 Zimmer | ca. 61.000 m² | Pachtobjekte</strong></p>
-            <p>Leitung von Facility Management, Engineering und technischem Betrieb für Clarion Hotel Copenhagen Airport und Comfort Hotel Copenhagen Airport mit umfangreichen Konferenzflächen und komplexem 24/7-Hotelbetrieb.</p>
-          </article>
+img { max-width: 100%; display: block; }
 
-          <article class="card large">
-            <h3>Comfort Hotel Copenhagen Airport</h3>
-            <p><strong>Full-Service Flughafen- &amp; Konferenzhotel | 605 Zimmer | ca. 29.000 m² | Pachtobjekt</strong></p>
-            <p><strong>5.000 m² Eventfläche</strong></p>
-            <p>Verantwortung für technische Inbetriebnahme und operative Einsatzbereitschaft eines 605-Zimmer-Airport-Hotels mit Ballroom, Meetingräumen, Sky Bar, Fitnessbereich und Crew-Einrichtungen.</p>
-          </article>
+a { color: inherit; }
 
-          <article class="card large">
-            <h3>Clarion Hotel Copenhagen Airport</h3>
-            <p><strong>Full-Service Flughafen- &amp; Konferenzhotel | 382 Zimmer | ca. 32.000 m² | Pachtobjekt</strong></p>
-            <p><strong>29 Meetingräume</strong></p>
-            <p>Leitung des technischen Betriebs für eines der größten Airport-Hotels Dänemarks, einschließlich Renovierungen, Event-Infrastruktur, Eigentümerbeziehungen und multidisziplinären technischen Teams.</p>
-          </article>
+p { margin: 0 0 1.1rem; }
 
-          <article class="card large">
-    <h3>Hilton Copenhagen Airport Hotel &amp; Hilton Malmö, Schweden</h3>
+h1, h2, h3 {
+  margin: 0;
+  color: #061a3d;
+  line-height: 1.15;
+}
 
-    <p><strong>Technischer Betrieb &amp; Hospitality Leadership</strong></p>
+h1 {
+  font-size: clamp(2.6rem, 4.2vw, 4.3rem);
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
 
-    <p>
-        Aufbau umfassender Erfahrung im technischen Hotelbetrieb,
-        gebäudetechnischen Systemen, der Betriebssicherheit für Gäste sowie
-        der technischen Infrastruktur internationaler Flughafenhotels in
-        Kopenhagen und Malmö.
-    </p>
-</article>
+h2 {
+  font-size: clamp(1.75rem, 2.8vw, 2.7rem);
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
 
-          <article class="card large">
-            <h3>Hilton Austria Cluster Hotels</h3>
-            <p><strong>Information Systems Manager | Wien Hotels & Innsbruck</strong></p
-            <p>Management von Informationssystemen für vier Hilton Hotels in Österreich mit Fokus auf Hotelbetrieb, technologische Zuverlässigkeit und Business Continuity.</p>
-          </article>
+h3 {
+  font-size: 1.28rem;
+  margin-bottom: 14px;
+}
 
-        </div>
-      </div>
-    </section>
+.container {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
 
-    <section class="achievement-section">
-      <h2>Geschäftlicher Mehrwert &amp; Ausgewählte Erfolge</h2>
+.container.narrow {
+  width: min(820px, calc(100% - 48px));
+}
 
-      <p class="section-intro">
-        Ausgewählte Beispiele, wie strategische Führung, technisches Fachwissen und operative Exzellenz zu messbarem Geschäftswert in internationalen Hospitality-Umgebungen beigetragen haben.
-      </p>
+.eyebrow {
+  margin: 0 0 22px;
+  color: #b4975a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
-      <div class="achievement-grid">
+.lead {
+  color: #27364f;
+  font-size: clamp(1.08rem, 1.55vw, 1.28rem);
+  line-height: 1.75;
+  max-width: 760px;
+}
 
-        <div class="achievement-card">
-          <h3>605-Zimmer-Hoteleröffnung</h3>
-          <p>
-            Unterstützung der technischen Eröffnung, Inbetriebnahme und operativen Stabilisierung eines der größten Airport-Hotels Skandinaviens mit umfangreichen Konferenzflächen.
-          </p>
-        </div>
+/* Header */
 
-        <div class="achievement-card">
-          <h3>Sicherstellung des Geschäftsbetriebs</h3>
-          <p>
-            Einführung von Notfallprozessen, die während eines größeren Systemausfalls die Erstellung von Gästekarten sicherstellten und einen unterbrechungsfreien Hotelbetrieb ermöglichten.
-          </p>
-        </div>
+.site-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(6, 26, 61, 0.12);
+}
 
-        <div class="achievement-card">
-          <h3>Technisches Asset Management</h3>
-          <p>
-            Entwicklung strukturierter Dokumentation und technischer Asset-Übersichten zur Verbesserung von Instandhaltungsplanung, Transparenz und operativer Entscheidungsfindung.
-          </p>
-        </div>
+.nav-container {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 26px 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
 
-        <div class="achievement-card">
-          <h3>Reduktion operativer Risiken</h3>
-          <p>
-            Verbesserung der Event-Infrastruktur durch Lösung wiederkehrender elektrischer Lastprobleme und Einführung sichererer Betriebsverfahren für große Konferenzen.
-          </p>
-        </div>
+.site-logo {
+  color: #061a3d;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+}
 
-        <div class="achievement-card">
-          <h3>Digitale Transformation</h3>
-          <p>
-            Migration der Bürotelefonie auf mobile Nebenstellen, wodurch flexible Remote-Arbeit und unterbrechungsfreie Kommunikation während COVID-19 ermöglicht wurden.
-          </p>
-        </div>
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
 
-        <div class="achievement-card">
-          <h3>Strategische Dienstleistersteuerung</h3>
-          <p>
-            Stärkung von Lieferantenmanagement, technischer Nachverfolgung und Servicequalität durch klarere Governance, Verantwortlichkeit und operative Kontrolle.
-          </p>
-        </div>
+.main-nav a {
+   color: #061a3d;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
 
-      </div>
-    </section>
+.main-nav a:hover,
+.main-nav a.active {
+  color: #b4975a;
+}
 
-<section class="achievement-details">
+.main-nav .nav-button {
+  background: #b4975a;
+  color: #ffffff;
+  padding: 15px 26px;
+  border-radius: 4px;
+}
 
-    <h2>Weitere Ausgewählte Erfolge</h2>
+.main-nav .nav-button:hover,
+.main-nav .nav-button.active {
+  background: #061a3d;
+  color: #ffffff;
+}
 
-    <p class="section-intro">
-        Weitere Beispiele für operative Verbesserungen, technische Führung und strategische Initiativen
-        aus internationalen Hospitality- und Facility-Management-Umgebungen.
-    </p>
+/* Buttons */
 
-    <div class="achievement-category">
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
 
-        <h3>Hoteleröffnungen & Großprojekte</h3>
+.btn {
+  display: inline-block;
+  background: #b4975a;
+  color: #ffffff;
+  padding: 16px 28px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
 
-        <ul>
-            <li>Technische Eröffnung, Inbetriebnahme und operative Stabilisierung eines 605-Zimmer-Airport-Hotels begleitet.</li>
-            <li>Mehrere Modernisierungs- und Renovierungsprojekte bei laufendem Hotelbetrieb umgesetzt.</li>
-            <li>Inbetriebnahme, Tests und Optimierung kritischer Gebäudetechnik unterstützt.</li>
-            <li>Technische Abläufe über Hotels mit umfangreichen Konferenzbereichen koordiniert.</li>
-        </ul>
+.btn:hover {
+  background: #061a3d;
+}
 
-        <h3>Business Continuity & Risikomanagement</h3>
+.btn.secondary {
+  background: transparent;
+  color: #061a3d;
+  border: 1px solid rgba(6, 26, 61, 0.18);
+}
 
-        <ul>
-            <li>Notfallverfahren für die Gästekartenproduktion während eines globalen Windows-Ausfalls eingeführt.</li>
-            <li>Operative Risiken durch präventive Instandhaltung und strukturierte Compliance reduziert.</li>
-            <li>Elektrische Sicherheit bei Großveranstaltungen durch optimierte Betriebsverfahren verbessert.</li>
-            <li>Business-Continuity-Maßnahmen für kritische Hotelinfrastruktur unterstützt.</li>
-        </ul>
+.btn.secondary:hover {
+  color: #ffffff;
+  background: #061a3d;
+}
 
-        <h3>Technisches Asset Management</h3>
+/* Hero */
 
-        <ul>
-            <li>Strukturierte Dokumentation für eigentümergeführte technische Anlagen entwickelt.</li>
-            <li>CAPEX-Planung und Lebenszyklusmanagement unterstützt.</li>
-            <li>Transparenz technischer Infrastruktur und Wartungsdokumentation verbessert.</li>
-            <li>Präventive Instandhaltungsplanung weiterentwickelt.</li>
-        </ul>
+.hero {
+  padding: 78px 0 80px;
+}
 
-        <h3>Digitale Transformation</h3>
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 80px;
+  align-items: center;
+}
 
-        <ul>
-            <li>Bürotelefonie während COVID-19 auf mobile Nebenstellen migriert.</li>
-            <li>Remote-Zugriff auf technische Gebäudemanagementsysteme verbessert.</li>
-            <li>Operative Dokumentation für schnellere Entscheidungsprozesse eingeführt.</li>
-        </ul>
+.hero-content h1 {
+  font-size: clamp(2.2rem, 3.6vw, 3.7rem);
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
 
-        <h3>Operative Exzellenz</h3>
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
+}
 
-        <ul>
-            <li>Steuerung von Dienstleistern und Lieferanten nachhaltig verbessert.</li>
-            <li>SOPs für Konferenzen und Großveranstaltungen entwickelt.</li>
-            <li>Zusammenarbeit zwischen Technik, Betrieb und Geschäftsleitung gestärkt.</li>
-            <li>Wartungsarbeiten zur Minimierung von Gästeeinflüssen koordiniert.</li>
-        </ul>
+.hero-image img {
+  width: min(100%, 450px);
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(6, 26, 61, 0.16);
+}
 
-        <h3>Nachhaltigkeit & ESG</h3>
+.hero-image.portrait img {
+  width: min(100%, 320px);
+  max-height: 430px;
+  object-position: center top;
+}
 
-        <ul>
-            <li>Energieoptimierung technischer Anlagen unterstützt.</li>
-            <li>Operative Verbesserungen zur Reduzierung des Ressourcenverbrauchs umgesetzt.</li>
-            <li>Nachhaltige Lebenszyklusplanung technischer Anlagen gefördert.</li>
-        </ul>
+/* Sections */
 
-    </div>
+.page-hero {
+  padding: 82px 0 48px;
+}
 
-</section>
+.page-hero h1 {
+  margin-bottom: 28px;
+}
 
-    
-  </main>
+.section {
+  padding: 82px 0;
+}
 
- <footer class="site-footer">
-    <div class="container">
-        <p>© 2026 Alexander Wich. Alle Rechte vorbehalten.</p>
+.section.soft {
+  background: #f7f4ee;
+}
 
-        <nav class="footer-links">
-            <a href="impressum-de.html">Impressum</a>
-            <span>·</span>
-            <a href="datenschutz.html">Datenschutzerklärung</a>
-            <span>·</span>
-            <a href="haftungsausschluss-de.html">Haftungsausschluss</a>
-        </nav>
-    </div>
-</footer>
-</body>
-</html>
+.text-block {
+  padding: 38px 0;
+  border-top: 1px solid rgba(6, 26, 61, 0.12);
+}
+
+.text-block p,
+.section p {
+  color: #26344e;
+  font-size: 1.05rem;
+  line-height: 1.82;
+}
+
+/* Cards */
+
+.card-grid {
+  display: grid;
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.card-grid.two { grid-template-columns: repeat(2, 1fr); }
+.card-grid.three { grid-template-columns: repeat(3, 1fr); }
+.card-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(6, 26, 61, 0.08);
+  padding: 34px 32px;
+  box-shadow: 0 14px 34px rgba(6, 26, 61, 0.06);
+}
+
+.card.large {
+  padding: 34px;
+  min-height: 230px;
+}
+
+.card p {
+  color: #31415a;
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+/* Quote */
+
+.quote-section {
+  padding: 88px 0 98px;
+  text-align: center;
+}
+
+.quote-section blockquote {
+  margin: 0;
+  color: #061a3d;
+  font-size: clamp(1.9rem, 3.5vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.quote-section p {
+  margin-top: 24px;
+  color: #b4975a;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Contact */
+
+.contact-card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #f7f4ee;
+  padding: 50px;
+  border: 1px solid rgba(6, 26, 61, 0.08);
+  box-shadow: 0 10px 30px rgba(6, 26, 61, 0.06);
+}
+
+.contact-card a {
+  color: #b4975a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  color: #061a3d;
+}
+
+.contact-card p {
+  margin-bottom: 1.35rem;
+}
+
+/* Footer */
+
+.site-footer {
+  padding: 28px 0;
+  border-top: 1px solid rgba(6, 26, 61, 0.12);
+  color: #31415a;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero-image {
+    justify-content: flex-start;
+  }
+
+  .card-grid.three,
+  .card-grid.four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-grid.two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 16px 20px;
+  }
+
+  .main-nav .nav-button {
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .container.narrow {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .hero,
+  .page-hero,
+  .section {
+    padding: 52px 0;
+  }
+
+  h1 {
+    font-size: clamp(2.45rem, 12vw, 3.6rem);
+  }
+
+  .card-grid.three,
+  .card-grid.four {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 30px 24px;
+  }
+}
+
+/* Home page polish */
+.home-closing .button-row.centered,
+.button-row.centered {
+  justify-content: center;
+}
+
+.home-closing blockquote {
+  margin-bottom: 30px;
+}
+
+/* Language switch */
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+  padding-left: 18px;
+  border-left: 1px solid rgba(6, 26, 61, 0.16);
+}
+
+.language-switch a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #061a3d;
+  text-decoration: none;
+}
+
+.language-switch a.active,
+.language-switch a:hover {
+  color: #b4975a;
+}
+
+@media (max-width: 760px) {
+  .language-switch {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+
+/* ===========================
+   Selected Achievements
+=========================== */
+
+.achievement-section {
+    max-width: 1120px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.achievement-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.achievement-card {
+    background: #ffffff;
+    border: 1px solid #e6e1d8;
+    border-radius: 10px;
+    padding: 28px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.achievement-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.achievement-card p {
+    line-height: 1.65;
+    color: #444;
+}
+
+@media (max-width: 1000px) {
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional Achievement List */
+
+.achievement-details{
+    max-width:1120px;
+    margin:70px auto 0;
+    padding-top:50px;
+    border-top:1px solid #d8d8d8;
+}
+
+.achievement-details h2{
+    text-align:center;
+    margin-bottom:12px;
+}
+
+.achievement-details .section-intro{
+    text-align:center;
+    color:#666;
+    max-width:760px;
+    margin:0 auto 45px;
+}
+
+.achievement-category{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.achievement-category h3{
+    color:#0d2b55;
+    margin-bottom:12px;
+}
+
+.achievement-category ul{
+    margin:0;
+    padding-left:24px;
+}
+
+.achievement-category li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.achievement-category h3 {
+    color: #0d2b55;
+    margin-bottom: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.achievement-category h3::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #c9a227;
+    margin-top: 8px;
+}
